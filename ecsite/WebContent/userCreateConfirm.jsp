@@ -72,7 +72,7 @@ clear:both;
 </div>
 
 <div>
-<h3>登録する内容はいかでよろしいですか。</h3>
+<h3>登録する内容は以下でよろしいですか。</h3>
 <table>
 <s:form action="UserCreateCompleteAction">
 	<tr id="box">
