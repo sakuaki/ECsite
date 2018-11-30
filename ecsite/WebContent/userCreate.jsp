@@ -78,31 +78,31 @@ clear:both;
 	</s:if>
 
 <table>
-	<s:form action ="UserCreateConfirmAction">
-<tr>
-	<td>
-		<labeL>ログインID:</label>
-	</td>
-	<td>
-		<input type="text" name="loginUserId" value=""/>
-	</td>
-</tr>
-<tr>
-	<td>
-		<labeL>ログインPASS:</labeL>
-	</td>
-	<td>
-		<input type="text" name="loginPassword" value=""/>
-	</td>
-</tr>
-<tr>
-	<td>
-		<label>ユーザー名:</label>
-	</td>
-	<td>
-	<input type="text" name="userName" value=""/>
-	</td>
-</tr>
+		<s:form action ="UserCreateConfirmAction">
+	<tr>
+		<td>
+			<labeL>ログインID:</label>
+		</td>
+		<td>
+			<input type="text" name="loginUserId" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<labeL>ログインPASS:</labeL>
+		</td>
+		<td>
+			<input type="text" name="loginPassword" value=""/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>ユーザー名:</label>
+		</td>
+		<td>
+			<input type="text" name="userName" value=""/>
+		</td>
+	</tr>
 <s:submit value="登録"/>
 </s:form>
 </table>
