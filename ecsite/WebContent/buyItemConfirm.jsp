@@ -11,9 +11,12 @@
 <meta http-equiv="description" content=""/>
 <meta http-equiv="keywords" content=""/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <title>BuyItemConfirm画面</title>
 <style type="text/css">
+
 /*========TAG LAYOUT========*/
+
 body{
 margin:0;
 padding:0;
@@ -24,32 +27,39 @@ font-size:12px;
 color:#333;
 background:#fff;
 }
+
 table{
 text-align:center;
 margin:0 auto;
 }
+
 /*========ID LAYOUT========*/
+
 #top{
 width:780px;
 margin:30px auto;
 border:1px solid #333;
 }
+
 #header{
 witdh:100%;
 height:80px;
 background-color:black;
 }
+
 #main{
 width:100%;
 height:500px;
 text-align:center;
 }
+
 #footer{
 width:100%;
 height:80px;
 background-color:black;
 clear:both;
 }
+
 </style>
 <script type="text/javascript">
 function submitAction(url){
@@ -60,39 +70,38 @@ function submitAction(url){
 </head>
 <body>
 <div id="header">
-
 </div>
 <div id="main">
 <div id="top">
-<p>BuyItem</p>
+<p>BuyItemConfirm</p>
 </div>
 <div>
 <s:form>
 
 <tr>
-<td>商品名</td>
-<td><s:property value="session.buyItem_name"/></td>
+	<td>商品名</td>
+	<td><s:property value="session.buyItem_name"/></td>
 </tr>
 <tr>
-<td>値段</td>
-<td><s:property value="session.buyItem_price"/><span>円</span></td>
+	<td>値段</td>
+	<td><s:property value="session.buyItem_price"/><span>円</span></td>
 </tr>
 <tr>
-<td>購入個数</td>
+	<td>購入個数</td>
 <td><s:property value="session.count"/><span>個</span></td>
 </tr>
 <tr>
-<td>支払い方法</td>
-<td><s:property value="session.pay"/></td>
+	<td>支払い方法</td>
+	<td><s:property value="session.pay"/></td>
 </tr>
 <tr>
-<td><br></td>
+	<td><br></td>
 </tr>
 <tr>
-<td><input type="button" value="戻る"
-onclick="submitAction('HomeAction')"/></td>
-<td><input type="button" value="完了"
-onclick="submitAction('BuyItemConfirmAction')"/></td>
+	<td><input type="button" value="戻る"
+		onclick="submitAction('HomeAction')"/></td>
+	<td><input type="button" value="完了"
+		onclick="submitAction('BuyItemConfirmAction')"/></td>
 </tr>
 </s:form>
 </div>

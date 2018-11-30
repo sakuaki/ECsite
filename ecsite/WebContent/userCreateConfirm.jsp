@@ -12,9 +12,12 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 
-<title>UserCreate画面</title>
+<title>UserCreateConfirn画面</title>
+
 <style type="text/css">
+
 /*========TAG LAYOUT========*/
+
 body{
 margin:0;
 padding:0;
@@ -25,6 +28,7 @@ font-size:12px;
 color:#333;
 background:#fff;
 }
+
 table{
 text-align:center;
 margin:0 auto;
@@ -41,13 +45,14 @@ border:1px solid #333;
 width:100%;
 height:80px;
 background-color:black;
-
 }
+
 #main{
 width:100%;
 height:500px;
 text-align:center;
 }
+
 #footer{
 width:100%;
 height:80px;
@@ -56,56 +61,54 @@ clear:both;
 }
 </style>
 </head>
+
 <body>
 <div id="header">
-
 </div>
 <div id="main">
 <div id="top">
-<p>UserCreate</p>
-
+<p>UserCreateConfirm</p>
 </div>
+
 <div>
-<s:if test='errorMassage !=""'>
-<s:property value="errorMassage" escape="false"/>
-</s:if>
+<h3>登録する内容はいかでよろしいですか。</h3>
 <table>
-<s:form action="UserCreateAction">
-<tr>
-<td>
-<label>ログインID:</label>
-</td>
-<td><input type="text" name="loginUserId" value=""/>
-</td>
+	<s:form action="UserCreateCompleteAction">
+<tr id="box">
+	<td>
+		<label>ログインID:</label>
+	</td>
+	<td><s:property value="loginUserId" escape="false"/>
+	</td>
+</tr>
+<tr id="box">
+	<td>
+		<label>ログインPASS:</label>
+	</td>
+	<td>
+		<s:property value="loginPassword" escape="false"/>
+	</td>
+</tr>
+<tr id="box">
+	<td>
+		<label>ユーザー名:</label>
+	</td>
+	<td>
+		<s:property value="userName" escape="false"/>
+	</td>
 </tr>
 <tr>
-<td>
-<label>ログインPASS:</label>
-</td>
-<td>
-<input type="text" name="loginPassword" value=""/>
-</td>
+	<td>
+		<s:submit value="完了"/>
+	</td>
 </tr>
-<tr>
-<td>
-<label>ユーザー名:</label>
-</td>
-<td>
-<input type="text" name="userName" value=""/>
-</td>
-</tr>
-<s:submit value="登録"/>
 </s:form>
 </table>
-<div>
-<span>前画面に戻る場合は</span>
-<a href='<s:url action="HomeAction"/>'>こちら</a>
+
 </div>
 </div>
-</div>
+
 <div id="footer">
-
 </div>
-
 </body>
 </html>

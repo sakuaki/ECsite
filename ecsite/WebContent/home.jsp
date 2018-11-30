@@ -13,6 +13,7 @@
 
 <title>Home画面</title>
 <style type="text/css">
+
 body{
 margin:0;
 padding:0;
@@ -28,28 +29,34 @@ table{
 text-align:center;
 margin:0 auto;
 }
+
 /*========ecsite LAYOUT========*/
+
 #top{
 width:780px;
 margin:30px auto;
 barder:1px solid #333;
 }
+
 #header{
 width:100%;
 height:80px;
 background-color:black;
 }
+
 #main{
 width:100%;
 height:500px;
 text-align:center;
 }
+
 #footer{
 width:100%;
 height:80px;
 background-color:black;
 clear:both;
 }
+
 #text-center{
 display:inline-block;
 text-align:center;
@@ -71,7 +78,7 @@ text-align:center;
 </s:form>
 <s:if test="#session.id !=null">
 <p>ログアウトする場合は
-<a href='<s:url action="LoginAction"/>'>こちら</a></p>
+<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 </s:if>
 
 </div>

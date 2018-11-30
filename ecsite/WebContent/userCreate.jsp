@@ -12,10 +12,12 @@
 <meta name="keywords" content="">
 
 <title>UserCreate画面</title>
-<style type="text/css">
-/*========TAG LAYOUT========*/
-body{
 
+<style type="text/css">
+
+/*========TAG LAYOUT========*/
+
+body{
 margin:0;
 padding:0;
 line-height:1.6;
@@ -25,82 +27,93 @@ font-size:12px;
 color:#333;
 background:#fff;
 }
+
 table{
 text-align:center;
 margin:0 auto;
-
 }
-/*========ID LAYOUT========*/
-#top{
 
+/*========ID LAYOUT========*/
+
+#top{
 width:780px;
 margin:30px auto;
 border:1px solid #333;
 }
+
 #header{
 width:100%;
 height:80px;
 background-color:black;
 }
+
 #main{
 width:100%;
 height:500px;
 text-align:center;
 }
+
 #footer{
 width:100%;
 height:80px;
 background-color:black;
 clear:both;
 }
-</style>
 
+</style>
 </head>
+
 <body>
 <div id="header">
-
 </div>
+
 <div id="main">
 <div id="top">
-<p>UserCreateComfirm</p>
+<p>UserCreate</p>
 </div>
+
 <div>
-<h3>登録する内容は以下でよろしいですか。</h3>
+	<s:if test='errorMassage !=""'>
+	<s:property value="errorMassage" escape="false"/>
+	</s:if>
+
 <table>
-<s:form action ="UserCreateCompleteAction">
-<tr id="box">
-<td>
-<labeL>ログインID:</label>
-</td>
-<td>
-<s:property value="loginUserId" escape="false"/>
-</td>
-</tr>
-<tr id="box">
-<td>
-<labeL>ログインPASS:</labeL>
-</td>
-<td>
-<s:property value="loginPassword" escape="false"/>
-</td>
-</tr>
-<tr id="box">
-<td>
-<label>ユーザー名:</label>
-</td>
-<td>
-<s:property value="UserName" escape="false"/>
-</td>
+	<s:form action ="UserCreateConfirmAction">
+<tr>
+	<td>
+		<labeL>ログインID:</label>
+	</td>
+	<td>
+		<input type="text" name="loginUserId" value=""/>
+	</td>
 </tr>
 <tr>
-<td>
-<s:submit value="完了"/>
-</td>
+	<td>
+		<labeL>ログインPASS:</labeL>
+	</td>
+	<td>
+		<input type="text" name="loginPassword" value=""/>
+	</td>
 </tr>
+<tr>
+	<td>
+		<label>ユーザー名:</label>
+	</td>
+	<td>
+	<input type="text" name="userName" value=""/>
+	</td>
+</tr>
+<s:submit value="登録"/>
 </s:form>
 </table>
+
+<div>
+<span>前画面に戻る場合は</span>
+<a href='<s:url action="HomeAction"/>'>こちら</a>
 </div>
 </div>
+</div>
+
 <div id="footer">
 </div>
 </body>

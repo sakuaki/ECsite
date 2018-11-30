@@ -25,7 +25,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 		@Override
 		public void setSession(Map<String,Object>session){
-			this.session=session;
+			this.session = session;
 	}
 		public Map<String,Object> getSession(){
 			return this.session;
