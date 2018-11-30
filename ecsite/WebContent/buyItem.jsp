@@ -61,20 +61,17 @@ clear:both;
 }
 </style>
 </head>
-<body>
 
+<body>
 <div id="header">
 </div>
-
 <div id="main">
-<div id="top">
-<p>BuyItem</p>
-</div>
-
-<div>
-<s:form action="BuyItemAction">
-
-<table>
+	<div id="top">
+	<p>BuyItem</p>
+	</div>
+	<div>
+	<s:form action="BuyItemAction">
+	<table>
 	<tr>
 		<td>
 			<span>商品名</span>
@@ -117,14 +114,14 @@ clear:both;
 			<s:submit value="購入"/>
 		</td>
 	</tr>
-</table>
-</s:form>
+	</table>
+	</s:form>
 
-<div>
-<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
-</div>
-</div>
+		<div>
+			<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+			<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
+		</div>
+	</div>
 </div>
 
 <div id="footer">

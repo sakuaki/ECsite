@@ -59,6 +59,7 @@ height:80px;
 background-color:black;
 clear:both;
 }
+
 </style>
 </head>
 
@@ -66,17 +67,15 @@ clear:both;
 <div id="header">
 </div>
 <div id="main">
-<div id="top">
-
-<p>UserCreateComplete</p>
-</div>
-
-<div>
-<h3>ユーザーの登録が完了致しました。</h3>
-<div>
-<a href='<s:url action="HomeAction"/>'>ログインへ</a>
-</div>
-</div>
+	<div id="top">
+	<p>UserCreateComplete</p>
+	</div>
+	<div>
+		<h3>ユーザーの登録が完了致しました。</h3>
+		<div>
+		<a href='<s:url action="HomeAction"/>'>ログインへ</a>
+		</div>
+	</div>
 </div>
 
 <div id="footer">

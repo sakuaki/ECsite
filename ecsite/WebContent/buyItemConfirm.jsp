@@ -72,40 +72,40 @@ function submitAction(url){
 <div id="header">
 </div>
 <div id="main">
-<div id="top">
-<p>BuyItemConfirm</p>
+	<div id="top">
+		<p>BuyItemConfirm</p>
+	</div>
+	<div>
+		<s:form>
+			<tr>
+				<td>商品名</td>
+				<td><s:property value="session.buyItem_name"/></td>
+			</tr>
+			<tr>
+				<td>値段</td>
+				<td><s:property value="session.buyItem_price"/><span>円</span></td>
+			</tr>
+			<tr>
+				<td>購入個数</td>
+				<td><s:property value="session.count"/><span>個</span></td>
+			</tr>
+			<tr>
+				<td>支払い方法</td>
+				<td><s:property value="session.pay"/></td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="戻る"
+					onclick="submitAction('HomeAction')"/></td>
+				<td><input type="button" value="完了"
+					onclick="submitAction('BuyItemConfirmAction')"/></td>
+			</tr>
+		</s:form>
+	</div>
 </div>
-<div>
-<s:form>
 
-	<tr>
-		<td>商品名</td>
-		<td><s:property value="session.buyItem_name"/></td>
-	</tr>
-	<tr>
-		<td>値段</td>
-		<td><s:property value="session.buyItem_price"/><span>円</span></td>
-	</tr>
-	<tr>
-		<td>購入個数</td>
-		<td><s:property value="session.count"/><span>個</span></td>
-	</tr>
-	<tr>
-		<td>支払い方法</td>
-		<td><s:property value="session.pay"/></td>
-	</tr>
-	<tr>
-		<td><br></td>
-	</tr>
-	<tr>
-		<td><input type="button" value="戻る"
-			onclick="submitAction('HomeAction')"/></td>
-		<td><input type="button" value="完了"
-			onclick="submitAction('BuyItemConfirmAction')"/></td>
-	</tr>
-</s:form>
-</div>
-</div>
 <div id="footer">
 </div>
 </body>
